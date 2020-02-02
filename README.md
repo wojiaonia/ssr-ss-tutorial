@@ -70,6 +70,7 @@ subnetAcc            0
 maxmode              1
 pcapEnable           0
 
+
 其他的一些命令：
 service serverSpeeder start #启动
 service serverSpeeder stop #停止
