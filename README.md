@@ -1,21 +1,8 @@
 # ssr-ss-tutorial
 
-默认centos7 
+## 默认centos7 
 
-1.先更换服务器内核：
-
-yum -y install wget
-
-wget --no-check-certificate -O rskernel.sh https://raw.githubusercontent.com/hombo125/doubi/master/rskernel.sh && bash rskernel.sh
-
-
-完成后会重启，重新连接服务器，连上后开始第二步的操作。
-
-2.一键安装锐速：（BBR太垃圾了）
-
-wget -N --no-check-certificate https://raw.githubusercontent.com/91yun/serverspeeder/master/serverspeeder-all.sh && bash serverspeeder-all.sh
-
-3. 安装ssr
+### 1. 安装ssr
 
 脚本一
 
@@ -39,10 +26,12 @@ chmod +x shadowsocksR.sh
 
 ./shadowsocksR.sh 2>&1 | tee shadowsocksR.log
 
+### 2. bbr plus
+不要在生产环境使用一键脚本，建议手动安装，进不了系统用vnc切内核
 
-
-出现类似的就表示成功：
-[Running Status]....
+wget "https://github.com/cx9208/bbrplus/raw/master/ok_bbrplus_centos.sh" && chmod +x ok_bbrplus_centos.sh && ./ok_bbrplus_centos.sh
+安装后，执行uname -r，显示4.14.129-bbrplus则切换内核成功
+执行lsmod | grep bbr，显示有bbrplus则开启成功
 
 
 
