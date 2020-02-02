@@ -42,34 +42,8 @@ chmod +x shadowsocksR.sh
 
 
 出现类似的就表示成功：
-[Running Status]
-ServerSpeeder is running!
-version              3.10.61.12
+[Running Status]....
 
-[License Information]
-License              6291BDBE113A6E9E (valid on current device)
-MaxSession           unlimited
-MaxTcpAccSession     unlimited
-MaxBandwidth(kbps)   unlimited
-ExpireDate           2034-12-31
-
-[Connection Information]
-TotalFlow            14
-NumOfTcpFlows        14
-TotalAccTcpFlow      9
-TotalActiveTcpFlow   2
-
-[Running Configuration]
-accif                eth0       
-acc                  1
-advacc               1
-advinacc             1
-wankbps              10000000
-waninkbps            10000000
-csvmode              0
-subnetAcc            0
-maxmode              1
-pcapEnable           0
 
 
 其他的一些命令：
