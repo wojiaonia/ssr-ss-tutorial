@@ -23,8 +23,9 @@ yum -y install wget
 
 wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
 
-记得协议 origin
-混淆 plain
+记得协议 auth_sha1_v4
+
+混淆 plain  (!!!!!!!!!!!!!!!!!)
 
 备用脚本二
 
